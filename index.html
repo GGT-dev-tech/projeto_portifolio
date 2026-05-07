@@ -1,0 +1,345 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <!-- Meta tags para compatibilidade e responsividade -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Portfólio profissional de Gustavo Gomes - Desenvolvedor Full Stack e Estudante de Engenharia de Software com projetos em produção">
+    <meta name="author" content="Gustavo Gomes">
+    
+    <title>Gustavo Gomes | Desenvolvedor Full Stack & Engenheiro de Software</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body class="tema-claro" data-theme="light">
+    <!-- HEADER SEMÂNTICO: Contém branding e navegação principal -->
+    <header role="banner" aria-label="Cabeçalho do site">
+        <nav id="menu" role="navigation" aria-label="Navegação principal">
+            <div class="nav-container">
+                <h1 class="logo">Gustavo Gomes</h1>
+                <ul class="nav-list">
+                    <li><a href="#sobre">Sobre Mim</a></li>
+                    <li><a href="#formacao">Formação</a></li>
+                    <li><a href="#portfolio">Portfólio</a></li>
+                    <li><a href="#contato">Contato</a></li>
+                    <!-- 
+                        Botão de alternância de tema com atributo aria-pressed para acessibilidade.
+                        O role="switch" indica que este é um componente de alternância (a11y).
+                    -->
+                    <li>
+                        <button 
+                            id="btn-tema" 
+                            class="btn-tema" 
+                            role="switch" 
+                            aria-checked="false" 
+                            aria-label="Alternar entre tema claro e escuro"
+                            title="Clique para alternar tema">
+                            🌙
+                        </button>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <!-- MAIN: Container principal de conteúdo (melhor prática de acessibilidade) -->
+    <main>
+        <!-- 
+            SECTION ABOUT: Seção semântica para informações pessoais.
+            Uso de <article> dentro de <section> para melhor estrutura hierárquica.
+        -->
+        <section id="sobre" class="section" aria-labelledby="titulo-sobre">
+            <div class="container">
+                <h2 id="titulo-sobre" class="section-title">Sobre Mim</h2>
+                <article class="about-content">
+                    <p>
+                        Minha jornada na tecnologia começou em 2018 quando decidi aprender 
+                        <strong>HTML e desenvolvimento web de forma autônoma</strong>, pesquisando em plataformas e recursos 
+                        de universidades internacionais. Essa dedicação me permitiu iniciar minha primeira empreitada 
+                        profissional: gestão de redes sociais e desenvolvimento de websites para pequenos negócios 
+                        e parceiros comerciais.
+                    </p>
+                    <p>
+                        Com o tempo, compreendi a importância de um <strong>diploma e certificações profissionais</strong> 
+                        para abrir portas no mercado tecnológico. Em 2024, iniciei minha formação acadêmica em 
+                        <strong>Engenharia de Software na UNINTER</strong>, e foi amor à primeira vista. A estrutura formal 
+                        do currículo me permitiu aprofundar os fundamentos da ciência da computação enquanto continuava 
+                        explorando novas ferramentas e tecnologias mensalmente.
+                    </p>
+                    <p>
+                        Acredito que o <strong>aprendizado contínuo através de erros e validações práticas</strong> é fundamental 
+                        para meu crescimento. Cada projeto que construo é pensado para ser seguro, responsável, organizado 
+                        e capaz de gerar valor real ao usuário final. Combino conhecimento acadêmico com experiência 
+                        prática para criar soluções tecnológicas robustas e inovadoras.
+                    </p>
+                </article>
+            </div>
+        </section>
+
+        <!-- 
+            SECTION FORMAÇÃO: Lista semântica de educação.
+            Utilizamos <dl> (definition list) para pares chave-valor educacionais.
+            Isso melhora a semântica e acessibilidade para leitores de tela.
+        -->
+        <section id="formacao" class="section section-alt" aria-labelledby="titulo-formacao">
+            <div class="container">
+                <h2 id="titulo-formacao" class="section-title">Formação & Certificações</h2>
+                <div class="education-grid">
+                    <article class="education-card">
+                        <h3>Ciência da Computação</h3>
+                        <dl class="education-details">
+                            <dt>Instituição</dt>
+                            <dd>UNINTER - Centro Universitário Internacional</dd>
+                            <dt>Período</dt>
+                            <dd>2024 - 2026</dd>
+                            <dt>Status</dt>
+                            <dd>Em andamento</dd>
+                            <dt>Foco</dt>
+                            <dd>Fundamentos de Ciência da Computação, Design de Software, Arquitetura</dd>
+                        </dl>
+                    </article>
+
+                    <article class="education-card">
+                        <h3>🛠 Linguagens & Frameworks</h3>
+                        <dl class="education-details">
+                            <dt>Backend</dt>
+                            <dd>Python, Java, JavaScript (Node.js)</dd>
+                            <dt>Frameworks</dt>
+                            <dd>Django, FastAPI, Express.js</dd>
+                            <dt>Frontend</dt>
+                            <dd>React, TypeScript, HTML5, CSS3, Vanilla JS</dd>
+                            <dt>Build Tools</dt>
+                            <dd>Vite, Webpack, npm/yarn</dd>
+                        </dl>
+                    </article>
+
+                    <article class="education-card">
+                        <h3>💾 Banco de Dados & DevOps</h3>
+                        <dl class="education-details">
+                            <dt>Bancos Relacionais</dt>
+                            <dd>MySQL, PostgreSQL</dd>
+                            <dt>Linguagem SQL</dt>
+                            <dd>Schemas avançados, Queries otimizadas</dd>
+                            <dt>Deploy & Servidores</dt>
+                            <dd>Railway, Amazon AWS (EC2, S3, RDS)</dd>
+                            <dt>Ambientes</dt>
+                            <dd>venv (Python), Node.js, Docker</dd>
+                        </dl>
+                    </article>
+
+                    <article class="education-card">
+                        <h3>🖥 Hardware & Suporte</h3>
+                        <dl class="education-details">
+                            <dt>Manutenção</dt>
+                            <dd>Computadores e Smartphones</dd>
+                            <dt>Diagnóstico</dt>
+                            <dd>Troubleshooting de Hardware/Software</dd>
+                            <dt>Experiência</dt>
+                            <dd>Suporte técnico e consultoria</dd>
+                        </dl>
+                    </article>
+
+                    <article class="education-card">
+                        <h3>📚 Aprendizado Contínuo</h3>
+                        <dl class="education-details">
+                            <dt>Metodologia</dt>
+                            <dd>Auto-ensino + Educação Formal</dd>
+                            <dt>Recursos</dt>
+                            <dd>MIT OpenCourseWare, Coursera, Documentação Oficial</dd>
+                            <dt>Prática</dt>
+                            <dd>Projetos pessoais e em produção desde 2018</dd>
+                        </dl>
+                    </article>
+
+                    <article class="education-card">
+                        <h3>🌍 Idiomas</h3>
+                        <dl class="education-details">
+                            <dt>Português</dt>
+                            <dd>Nativo / Fluente</dd>
+                            <dt>Inglês</dt>
+                            <dd>Intermediário / Avançado em contexto técnico</dd>
+                            <dt>Documentação</dt>
+                            <dd>Leitura fluente de docs técnicas internacionais</dd>
+                        </dl>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <!-- 
+            SECTION PORTFÓLIO: Galeria de projetos com estrutura Grid.
+            Cada projeto é um <article> com imagem, descrição e link.
+            A estrutura facilita manutenção e expansão futura.
+        -->
+        <section id="portfolio" class="section" aria-labelledby="titulo-portfolio">
+            <div class="container">
+                <h2 id="titulo-portfolio" class="section-title">Portfólio de Projetos</h2>
+                <div class="portfolio-grid">
+                    <article class="portfolio-card">
+                        <figure>
+                            <img src="img/projeto1.jpg" alt="Sistema Inteligente de Propriedades - Análise de taxas imobiliárias" loading="lazy">
+                            <figcaption>Projeto 1</figcaption>
+                        </figure>
+                        <h3>🏠 Sistema Inteligente de Propriedades</h3>
+                        <p>
+                            Sistema em <strong>produção</strong> que auxilia investidores a encontrar propriedades 
+                            listadas em leilões nos Estados Unidos. Utiliza algoritmos inteligentes de análise 
+                            de taxas e permite filtros avançados para maximizar oportunidades de investimento.
+                        </p>
+                        <div class="tech-tags">
+                            <span class="tag">Python</span>
+                            <span class="tag">FastAPI</span>
+                            <span class="tag">PostgreSQL</span>
+                            <span class="tag">AWS</span>
+                            <span class="tag">React</span>
+                        </div>
+                        <a href="https://www.goauct.com" class="btn-projeto" aria-label="Ver detalhes do Sistema Inteligente de Propriedades">Ver Projeto →</a>
+                    </article>
+
+                    <article class="portfolio-card">
+                        <figure>
+                            <img src="img/projeto2.jpg" alt="Sistema de Gestão Escolar - Plataforma pedagógica e administrativa" loading="lazy">
+                            <figcaption>Projeto 2</figcaption>
+                        </figure>
+                        <h3>📚 Sistema de Gestão Escolar</h3>
+                        <p>
+                            Plataforma <strong>em desenvolvimento</strong> que abrange todo o escopo de uma instituição educacional. 
+                            Inclui módulos de pedagogia (aulas e visualização para alunos), administração (secretaria, diretoria) 
+                            e integração com responsáveis. Projeto de longo prazo com detalhes técnicos inovadores.
+                        </p>
+                        <div class="tech-tags">
+                            <span class="tag">Django</span>
+                            <span class="tag">TypeScript</span>
+                            <span class="tag">MySQL</span>
+                            <span class="tag">React</span>
+                            <span class="tag">Docker</span>
+                        </div>
+                        <a href="#" class="btn-projeto" aria-label="Ver detalhes do Sistema de Gestão Escolar">Ver Projeto →</a>
+                    </article>
+
+                    <article class="portfolio-card">
+                        <figure>
+                            <img src="img/projeto3.jpg" alt="Sistema de Controle de Portaria - Gerenciamento de condomínio" loading="lazy">
+                            <figcaption>Projeto 3</figcaption>
+                        </figure>
+                        <h3>🚪 Sistema de Controle de Portaria</h3>
+                        <p>
+                            Sistema em <strong>produção</strong> para auxiliar porteiros com tarefas cotidianas de condomínios. 
+                            Gerencia entradas e saídas, visitantes, correspondências e comunicados. Interface intuitiva 
+                            para facilitar operações do dia a dia.
+                        </p>
+                        <div class="tech-tags">
+                            <span class="tag">Node.js</span>
+                            <span class="tag">Express</span>
+                            <span class="tag">PostgreSQL</span>
+                            <span class="tag">React</span>
+                            <span class="tag">Railway</span>
+                        </div>
+                        <a href="https://maresol.up.railway.app" class="btn-projeto" aria-label="Ver detalhes do Sistema de Controle de Portaria">Ver Projeto →</a>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <!-- 
+            SECTION CONTATO: Formulário de contato com validação nativa e ARIA.
+            Implementamos feedback visual via JavaScript sem usar alert().
+        -->
+        <section id="contato" class="section section-alt" aria-labelledby="titulo-contato">
+            <div class="container">
+                <h2 id="titulo-contato" class="section-title">Entre em Contato</h2>
+                <div class="contact-wrapper">
+                    <div class="contact-info">
+                        <p>
+                            Estou sempre disponível para discussões sobre novos projetos, oportunidades de colaboração 
+                            e trocas de conhecimento. Sinta-se livre para entrar em contato através dos canais abaixo:
+                        </p>
+                        <div class="info-items">
+                            <div class="info-item">
+                                <strong>📧 Email:</strong>
+                                <a href="mailto:gustavot.gomes7@gmail.com">gustavot.gomes7@gmail.com</a>
+                            </div>
+                            <div class="info-item">
+                                <strong>📱 WhatsApp/Telefone:</strong>
+                                <a href="tel:+5548991451169">(48) 99145-1169</a>
+                            </div>
+                            <div class="info-item">
+                                <strong>💼 LinkedIn:</strong>
+                                <a href="#" target="_blank" rel="noopener">Gustavo Gomes</a>
+                            </div>
+                            <div class="info-item">
+                                <strong>🐙 GitHub:</strong>
+                                <a href="#" target="_blank" rel="noopener">gustavogomes</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <form id="form-contato" class="contact-form" aria-describedby="form-status">
+                        <div class="form-group">
+                            <label for="nome">Nome Completo <span aria-label="obrigatório">*</span></label>
+                            <input 
+                                type="text" 
+                                id="nome" 
+                                name="nome" 
+                                placeholder="Ex: João Silva"
+                                required
+                                aria-required="true"
+                                minlength="3">
+                            <span class="error-message" id="erro-nome" role="alert"></span>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="email">Endereço de E-mail <span aria-label="obrigatório">*</span></label>
+                            <input 
+                                type="email" 
+                                id="email" 
+                                name="email" 
+                                placeholder="seu.email@exemplo.com"
+                                required
+                                aria-required="true">
+                            <span class="error-message" id="erro-email" role="alert"></span>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="mensagem">Mensagem <span aria-label="obrigatório">*</span></label>
+                            <textarea 
+                                id="mensagem" 
+                                name="mensagem" 
+                                placeholder="Sua mensagem aqui..."
+                                required
+                                aria-required="true"
+                                minlength="10"
+                                rows="5"></textarea>
+                            <span class="error-message" id="erro-mensagem" role="alert"></span>
+                        </div>
+
+                        <!-- Div para feedback de status do formulário (sucesso/erro geral) -->
+                        <div id="form-status" class="form-status" role="status" aria-live="polite"></div>
+
+                        <button type="submit" class="btn-submit">Enviar Mensagem</button>
+                    </form>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- 
+        FOOTER SEMÂNTICO: Rodapé com informações de copyright e links.
+        <time> para data com formato ISO para máquina legibilidade.
+    -->
+    <footer role="contentinfo" aria-label="Rodapé">
+        <div class="container">
+            <p>© <time datetime="2026">2026</time> - Todos os direitos reservados | Desenvolvido com ❤️</p>
+            <nav class="footer-nav" aria-label="Links sociais">
+                <ul>
+                    <li><a href="#" aria-label="LinkedIn">LinkedIn</a></li>
+                    <li><a href="#" aria-label="GitHub">GitHub</a></li>
+                    <li><a href="#" aria-label="Email">Email</a></li>
+                </ul>
+            </nav>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,41 @@
+# Dependências
+node_modules/
+*.npm
+yarn-error.log
+
+# Build outputs
+dist/
+build/
+*.bundle.js
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Variáveis de ambiente
+.env
+.env.local
+.env.*.local
+
+# Cache
+.cache/
+*.cache
+
+# Logs
+logs/
+*.log
+
+# Arquivos temporários
+*.tmp
+temp/
+
+# Backup
+*.bak
+*.backup
