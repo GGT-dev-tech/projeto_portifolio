@@ -547,11 +547,43 @@ const DOMUtility = (() => {
     };
     
     /**
+     * Scroll Reveal Animações
+     * 
+     * Adiciona classe .active em elementos com .reveal quando entram na viewport.
+     * Utiliza IntersectionObserver para alta performance sem sobrecarregar evento de scroll.
+     */
+    const scrollReveal = () => {
+        if ('IntersectionObserver' in window) {
+            const revealObserver = new IntersectionObserver((entries) => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        entry.target.classList.add('active');
+                        revealObserver.unobserve(entry.target);
+                    }
+                });
+            }, {
+                root: null,
+                threshold: 0.15,
+                rootMargin: "0px 0px -30px 0px"
+            });
+            
+            document.querySelectorAll('.reveal').forEach(el => {
+                revealObserver.observe(el);
+            });
+        } else {
+            document.querySelectorAll('.reveal').forEach(el => {
+                el.classList.add('active');
+            });
+        }
+    };
+    
+    /**
      * Inicializa utilitários do DOM
      */
     const init = () => {
         enhanceSmoothScroll();
         lazyLoadImages();
+        scrollReveal();
     };
     
     return { init };

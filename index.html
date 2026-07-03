@@ -8,6 +8,10 @@
     <meta name="author" content="Gustavo Gomes">
     
     <title>Gustavo Gomes | Desenvolvedor Full Stack & Engenheiro de Software</title>
+    <!-- Fontes Premium -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
 </head>
 
@@ -50,8 +54,8 @@
         -->
         <section id="sobre" class="section" aria-labelledby="titulo-sobre">
             <div class="container">
-                <h2 id="titulo-sobre" class="section-title">Sobre Mim</h2>
-                <article class="about-content">
+                <h2 id="titulo-sobre" class="section-title reveal">Sobre Mim</h2>
+                <article class="about-content reveal" style="--delay: 0.1s">
                     <p>
                         Minha jornada na tecnologia começou em 2018 quando decidi aprender 
                         <strong>HTML e desenvolvimento web de forma autônoma</strong>, pesquisando em plataformas e recursos 
@@ -83,9 +87,9 @@
         -->
         <section id="formacao" class="section section-alt" aria-labelledby="titulo-formacao">
             <div class="container">
-                <h2 id="titulo-formacao" class="section-title">Formação & Certificações</h2>
+                <h2 id="titulo-formacao" class="section-title reveal">Formação & Certificações</h2>
                 <div class="education-grid">
-                    <article class="education-card">
+                    <article class="education-card reveal" style="--delay: 0.1s">
                         <h3>Ciência da Computação</h3>
                         <dl class="education-details">
                             <dt>Instituição</dt>
@@ -99,7 +103,7 @@
                         </dl>
                     </article>
 
-                    <article class="education-card">
+                    <article class="education-card reveal" style="--delay: 0.2s">
                         <h3>🛠 Linguagens & Frameworks</h3>
                         <dl class="education-details">
                             <dt>Backend</dt>
@@ -113,7 +117,7 @@
                         </dl>
                     </article>
 
-                    <article class="education-card">
+                    <article class="education-card reveal" style="--delay: 0.2s">
                         <h3>💾 Banco de Dados & DevOps</h3>
                         <dl class="education-details">
                             <dt>Bancos Relacionais</dt>
@@ -127,7 +131,7 @@
                         </dl>
                     </article>
 
-                    <article class="education-card">
+                    <article class="education-card reveal" style="--delay: 0.2s">
                         <h3>🖥 Hardware & Suporte</h3>
                         <dl class="education-details">
                             <dt>Manutenção</dt>
@@ -139,7 +143,7 @@
                         </dl>
                     </article>
 
-                    <article class="education-card">
+                    <article class="education-card reveal" style="--delay: 0.2s">
                         <h3>📚 Aprendizado Contínuo</h3>
                         <dl class="education-details">
                             <dt>Metodologia</dt>
@@ -151,7 +155,7 @@
                         </dl>
                     </article>
 
-                    <article class="education-card">
+                    <article class="education-card reveal" style="--delay: 0.2s">
                         <h3>🌍 Idiomas</h3>
                         <dl class="education-details">
                             <dt>Português</dt>
@@ -173,69 +177,75 @@
         -->
         <section id="portfolio" class="section" aria-labelledby="titulo-portfolio">
             <div class="container">
-                <h2 id="titulo-portfolio" class="section-title">Portfólio de Projetos</h2>
+                <h2 id="titulo-portfolio" class="section-title reveal">Portfólio de Projetos</h2>
                 <div class="portfolio-grid">
-                    <article class="portfolio-card">
+                    <article class="portfolio-card reveal" style="--delay: 0.1s">
                         <figure>
                             <img src="img/projeto1.jpg" alt="Sistema Inteligente de Propriedades - Análise de taxas imobiliárias" loading="lazy">
-                            <figcaption>Projeto 1</figcaption>
+                            <figcaption>GoAuct</figcaption>
                         </figure>
-                        <h3>🏠 Sistema Inteligente de Propriedades</h3>
-                        <p>
-                            Sistema em <strong>produção</strong> que auxilia investidores a encontrar propriedades 
-                            listadas em leilões nos Estados Unidos. Utiliza algoritmos inteligentes de análise 
-                            de taxas e permite filtros avançados para maximizar oportunidades de investimento.
-                        </p>
-                        <div class="tech-tags">
-                            <span class="tag">Python</span>
-                            <span class="tag">FastAPI</span>
-                            <span class="tag">PostgreSQL</span>
-                            <span class="tag">AWS</span>
-                            <span class="tag">React</span>
+                        <div class="card-content">
+                            <h3>🏠 GoAuct - Sistema Imobiliário</h3>
+                            <p>
+                                Aplicação corporativa B2B em <strong>produção</strong> focada no mercado imobiliário americano. 
+                                Projetada para alta escalabilidade e performance, processa e filtra vastos volumes de dados de leilões. 
+                                Arquitetura robusta desenhada para maximizar o ROI de investidores.
+                            </p>
+                            <div class="tech-tags">
+                                <span class="tag">Python</span>
+                                <span class="tag">FastAPI</span>
+                                <span class="tag">PostgreSQL</span>
+                                <span class="tag">AWS</span>
+                                <span class="tag">React</span>
+                            </div>
                         </div>
-                        <a href="https://www.goauct.com" class="btn-projeto" aria-label="Ver detalhes do Sistema Inteligente de Propriedades">Ver Projeto →</a>
+                        <a href="https://www.goauct.com" class="btn-projeto" target="_blank" rel="noopener" aria-label="Ver detalhes do Sistema Inteligente de Propriedades">Acessar Plataforma →</a>
                     </article>
 
-                    <article class="portfolio-card">
+                    <article class="portfolio-card reveal" style="--delay: 0.2s">
                         <figure>
                             <img src="img/projeto2.jpg" alt="Sistema de Gestão Escolar - Plataforma pedagógica e administrativa" loading="lazy">
-                            <figcaption>Projeto 2</figcaption>
+                            <figcaption>Sistema de Gestão Escolar</figcaption>
                         </figure>
-                        <h3>📚 Sistema de Gestão Escolar</h3>
-                        <p>
-                            Plataforma <strong>em desenvolvimento</strong> que abrange todo o escopo de uma instituição educacional. 
-                            Inclui módulos de pedagogia (aulas e visualização para alunos), administração (secretaria, diretoria) 
-                            e integração com responsáveis. Projeto de longo prazo com detalhes técnicos inovadores.
-                        </p>
-                        <div class="tech-tags">
-                            <span class="tag">Django</span>
-                            <span class="tag">TypeScript</span>
-                            <span class="tag">MySQL</span>
-                            <span class="tag">React</span>
-                            <span class="tag">Docker</span>
+                        <div class="card-content">
+                            <h3>📚 Sistema de Gestão Escolar</h3>
+                            <p>
+                                Plataforma educacional enterprise desenvolvida com <strong>arquitetura modular</strong>. 
+                                Integra perfeitamente módulos administrativos, de docência e alunos. Destaca-se pelo uso de 
+                                conteinerização avançada e boas práticas para deploy e alta disponibilidade.
+                            </p>
+                            <div class="tech-tags">
+                                <span class="tag">Django</span>
+                                <span class="tag">TypeScript</span>
+                                <span class="tag">MySQL</span>
+                                <span class="tag">React</span>
+                                <span class="tag">Docker</span>
+                            </div>
                         </div>
-                        <a href="#" class="btn-projeto" aria-label="Ver detalhes do Sistema de Gestão Escolar">Ver Projeto →</a>
+                        <a href="#" class="btn-projeto" aria-label="Ver detalhes do Sistema de Gestão Escolar">Visualizar Arquitetura →</a>
                     </article>
 
-                    <article class="portfolio-card">
+                    <article class="portfolio-card reveal" style="--delay: 0.3s">
                         <figure>
                             <img src="img/projeto3.jpg" alt="Sistema de Controle de Portaria - Gerenciamento de condomínio" loading="lazy">
-                            <figcaption>Projeto 3</figcaption>
+                            <figcaption>Controle de Portaria</figcaption>
                         </figure>
-                        <h3>🚪 Sistema de Controle de Portaria</h3>
-                        <p>
-                            Sistema em <strong>produção</strong> para auxiliar porteiros com tarefas cotidianas de condomínios. 
-                            Gerencia entradas e saídas, visitantes, correspondências e comunicados. Interface intuitiva 
-                            para facilitar operações do dia a dia.
-                        </p>
-                        <div class="tech-tags">
-                            <span class="tag">Node.js</span>
-                            <span class="tag">Express</span>
-                            <span class="tag">PostgreSQL</span>
-                            <span class="tag">React</span>
-                            <span class="tag">Railway</span>
+                        <div class="card-content">
+                            <h3>🚪 Sistema de Controle de Portaria</h3>
+                            <p>
+                                Software SaaS em <strong>produção</strong> para gestão eficiente de segurança condominial. 
+                                Permite monitoramento em tempo real de visitantes e controle logístico de encomendas, 
+                                com foco em UI/UX fluida para maximizar a adoção operacional.
+                            </p>
+                            <div class="tech-tags">
+                                <span class="tag">Node.js</span>
+                                <span class="tag">Express</span>
+                                <span class="tag">PostgreSQL</span>
+                                <span class="tag">React</span>
+                                <span class="tag">Railway</span>
+                            </div>
                         </div>
-                        <a href="https://maresol.up.railway.app" class="btn-projeto" aria-label="Ver detalhes do Sistema de Controle de Portaria">Ver Projeto →</a>
+                        <a href="https://maresol.up.railway.app" class="btn-projeto" target="_blank" rel="noopener" aria-label="Ver detalhes do Sistema de Controle de Portaria">Acessar Sistema →</a>
                     </article>
                 </div>
             </div>
@@ -247,8 +257,8 @@
         -->
         <section id="contato" class="section section-alt" aria-labelledby="titulo-contato">
             <div class="container">
-                <h2 id="titulo-contato" class="section-title">Entre em Contato</h2>
-                <div class="contact-wrapper">
+                <h2 id="titulo-contato" class="section-title reveal">Entre em Contato</h2>
+                <div class="contact-wrapper reveal" style="--delay: 0.1s">
                     <div class="contact-info">
                         <p>
                             Estou sempre disponível para discussões sobre novos projetos, oportunidades de colaboração 
@@ -256,20 +266,20 @@
                         </p>
                         <div class="info-items">
                             <div class="info-item">
-                                <strong>📧 Email:</strong>
+                                <strong>📧 Email Corporativo:</strong>
                                 <a href="mailto:gustavot.gomes7@gmail.com">gustavot.gomes7@gmail.com</a>
                             </div>
                             <div class="info-item">
-                                <strong>📱 WhatsApp/Telefone:</strong>
-                                <a href="tel:+5548991451169">(48) 99145-1169</a>
+                                <strong>📱 Telefone:</strong>
+                                <a href="tel:+5548991451169">+55 (48) 99145-1169</a>
                             </div>
                             <div class="info-item">
                                 <strong>💼 LinkedIn:</strong>
-                                <a href="#" target="_blank" rel="noopener">Gustavo Gomes</a>
+                                <a href="https://www.linkedin.com/in/gustavo-gomes-ggt" target="_blank" rel="noopener">linkedin.com/in/gustavo-gomes-ggt</a>
                             </div>
                             <div class="info-item">
                                 <strong>🐙 GitHub:</strong>
-                                <a href="#" target="_blank" rel="noopener">gustavogomes</a>
+                                <a href="https://github.com/gustavogomes" target="_blank" rel="noopener">github.com/gustavogomes</a>
                             </div>
                         </div>
                     </div>
@@ -329,12 +339,12 @@
     -->
     <footer role="contentinfo" aria-label="Rodapé">
         <div class="container">
-            <p>© <time datetime="2026">2026</time> - Todos os direitos reservados | Desenvolvido com ❤️</p>
+            <p>© <time datetime="2026">2026</time> Gustavo Gomes. Todos os direitos reservados.</p>
             <nav class="footer-nav" aria-label="Links sociais">
                 <ul>
-                    <li><a href="#" aria-label="LinkedIn">LinkedIn</a></li>
-                    <li><a href="#" aria-label="GitHub">GitHub</a></li>
-                    <li><a href="#" aria-label="Email">Email</a></li>
+                    <li><a href="https://www.linkedin.com/in/gustavo-gomes-ggt" target="_blank" rel="noopener" aria-label="LinkedIn">LinkedIn</a></li>
+                    <li><a href="https://github.com/gustavogomes" target="_blank" rel="noopener" aria-label="GitHub">GitHub</a></li>
+                    <li><a href="mailto:gustavot.gomes7@gmail.com" aria-label="Email">Email</a></li>
                 </ul>
             </nav>
         </div>
