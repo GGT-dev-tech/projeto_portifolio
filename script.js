@@ -27,8 +27,6 @@ const ThemeManager = (() => {
     const THEME_KEY = 'user-theme-preference';
     const THEME_LIGHT = 'light';
     const THEME_DARK = 'dark';
-    const BUTTON_LIGHT_ICON = '🌙'; // Lua = modo claro disponível
-    const BUTTON_DARK_ICON = '☀️';  // Sol = modo escuro disponível
     
     // Elementos do DOM (cache para melhor performance)
     const _btnTema = document.getElementById('btn-tema');
@@ -76,10 +74,6 @@ const ThemeManager = (() => {
         // Atualiza atributo data-theme para ativar variáveis CSS
         _html.setAttribute('data-theme', theme);
         _body.classList.toggle('tema-escuro', theme === THEME_DARK);
-        
-        // Atualiza ícone do botão (feedback visual)
-        const icon = theme === THEME_DARK ? BUTTON_DARK_ICON : BUTTON_LIGHT_ICON;
-        _btnTema.textContent = icon;
         
         // Atualiza atributo ARIA para acessibilidade (leitores de tela)
         _btnTema.setAttribute('aria-checked', theme === THEME_DARK);

@@ -16,6 +16,13 @@
 </head>
 
 <body class="tema-claro" data-theme="light">
+    <!-- Elementos decorativos para Efeito Glassmorphism -->
+    <div class="background-elements" aria-hidden="true">
+        <div class="blob blob-1"></div>
+        <div class="blob blob-2"></div>
+        <div class="blob blob-3"></div>
+    </div>
+
     <!-- HEADER SEMÂNTICO: Contém branding e navegação principal -->
     <header role="banner" aria-label="Cabeçalho do site">
         <nav id="menu" role="navigation" aria-label="Navegação principal">
@@ -38,7 +45,8 @@
                             aria-checked="false" 
                             aria-label="Alternar entre tema claro e escuro"
                             title="Clique para alternar tema">
-                            🌙
+                            <svg class="icon-sun" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="5"></circle><line x1="12" y1="1" x2="12" y2="3"></line><line x1="12" y1="21" x2="12" y2="23"></line><line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line><line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line><line x1="1" y1="12" x2="3" y2="12"></line><line x1="21" y1="12" x2="23" y2="12"></line><line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line><line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line></svg>
+                            <svg class="icon-moon" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path></svg>
                         </button>
                     </li>
                 </ul>
@@ -104,7 +112,7 @@
                     </article>
 
                     <article class="education-card reveal" style="--delay: 0.2s">
-                        <h3>🛠 Linguagens & Frameworks</h3>
+                        <h3>Linguagens & Frameworks</h3>
                         <dl class="education-details">
                             <dt>Backend</dt>
                             <dd>Python, Java, JavaScript (Node.js)</dd>
@@ -118,7 +126,7 @@
                     </article>
 
                     <article class="education-card reveal" style="--delay: 0.2s">
-                        <h3>💾 Banco de Dados & DevOps</h3>
+                        <h3>Banco de Dados & DevOps</h3>
                         <dl class="education-details">
                             <dt>Bancos Relacionais</dt>
                             <dd>MySQL, PostgreSQL</dd>
@@ -132,7 +140,7 @@
                     </article>
 
                     <article class="education-card reveal" style="--delay: 0.2s">
-                        <h3>🖥 Hardware & Suporte</h3>
+                        <h3>Hardware & Suporte</h3>
                         <dl class="education-details">
                             <dt>Manutenção</dt>
                             <dd>Computadores e Smartphones</dd>
@@ -144,7 +152,7 @@
                     </article>
 
                     <article class="education-card reveal" style="--delay: 0.2s">
-                        <h3>📚 Aprendizado Contínuo</h3>
+                        <h3>Aprendizado Contínuo</h3>
                         <dl class="education-details">
                             <dt>Metodologia</dt>
                             <dd>Auto-ensino + Educação Formal</dd>
@@ -156,7 +164,7 @@
                     </article>
 
                     <article class="education-card reveal" style="--delay: 0.2s">
-                        <h3>🌍 Idiomas</h3>
+                        <h3>Idiomas</h3>
                         <dl class="education-details">
                             <dt>Português</dt>
                             <dd>Nativo / Fluente</dd>
@@ -185,7 +193,7 @@
                             <figcaption>GoAuct</figcaption>
                         </figure>
                         <div class="card-content">
-                            <h3>🏠 GoAuct - Sistema Imobiliário</h3>
+                            <h3>GoAuct - Sistema Imobiliário</h3>
                             <p>
                                 Aplicação corporativa B2B em <strong>produção</strong> focada no mercado imobiliário americano. 
                                 Projetada para alta escalabilidade e performance, processa e filtra vastos volumes de dados de leilões. 
@@ -208,7 +216,7 @@
                             <figcaption>Sistema de Gestão Escolar</figcaption>
                         </figure>
                         <div class="card-content">
-                            <h3>📚 Sistema de Gestão Escolar</h3>
+                            <h3>Sistema de Gestão Escolar</h3>
                             <p>
                                 Plataforma educacional enterprise desenvolvida com <strong>arquitetura modular</strong>. 
                                 Integra perfeitamente módulos administrativos, de docência e alunos. Destaca-se pelo uso de 
@@ -231,7 +239,7 @@
                             <figcaption>Controle de Portaria</figcaption>
                         </figure>
                         <div class="card-content">
-                            <h3>🚪 Sistema de Controle de Portaria</h3>
+                            <h3>Sistema de Controle de Portaria</h3>
                             <p>
                                 Software SaaS em <strong>produção</strong> para gestão eficiente de segurança condominial. 
                                 Permite monitoramento em tempo real de visitantes e controle logístico de encomendas, 
@@ -266,19 +274,19 @@
                         </p>
                         <div class="info-items">
                             <div class="info-item">
-                                <strong>📧 Email Corporativo:</strong>
+                                <strong>Email Corporativo:</strong>
                                 <a href="mailto:gustavot.gomes7@gmail.com">gustavot.gomes7@gmail.com</a>
                             </div>
                             <div class="info-item">
-                                <strong>📱 Telefone:</strong>
+                                <strong>Telefone:</strong>
                                 <a href="tel:+5548991451169">+55 (48) 99145-1169</a>
                             </div>
                             <div class="info-item">
-                                <strong>💼 LinkedIn:</strong>
-                                <a href="https://www.linkedin.com/in/gustavo-gomes-ggt" target="_blank" rel="noopener">linkedin.com/in/gustavo-gomes-ggt</a>
+                                <strong>LinkedIn:</strong>
+                                <a href="https://www.linkedin.com/in/gustavo-gomes-tavares-370991154/" target="_blank" rel="noopener">linkedin.com/in/gustavo-gomes-tavares</a>
                             </div>
                             <div class="info-item">
-                                <strong>🐙 GitHub:</strong>
+                                <strong>GitHub:</strong>
                                 <a href="https://github.com/gustavogomes" target="_blank" rel="noopener">github.com/gustavogomes</a>
                             </div>
                         </div>
@@ -342,7 +350,7 @@
             <p>© <time datetime="2026">2026</time> Gustavo Gomes. Todos os direitos reservados.</p>
             <nav class="footer-nav" aria-label="Links sociais">
                 <ul>
-                    <li><a href="https://www.linkedin.com/in/gustavo-gomes-ggt" target="_blank" rel="noopener" aria-label="LinkedIn">LinkedIn</a></li>
+                    <li><a href="https://www.linkedin.com/in/gustavo-gomes-tavares-370991154/" target="_blank" rel="noopener" aria-label="LinkedIn">LinkedIn</a></li>
                     <li><a href="https://github.com/gustavogomes" target="_blank" rel="noopener" aria-label="GitHub">GitHub</a></li>
                     <li><a href="mailto:gustavot.gomes7@gmail.com" aria-label="Email">Email</a></li>
                 </ul>
